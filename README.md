@@ -41,11 +41,22 @@
 
 ## 装
 
+**从 npm（推荐）**
+
 ```bash
-dsh plugin --profile <你的profile> add /home/wjb/Projects/dsh-memory-garden
+npm i -g dsh-memory-garden
+# 或者装进某个 profile
+dsh plugin --profile <你的profile> add dsh-memory-garden
 ```
 
-或者在 profile 的 `cordis.patch.yml` 里加这个 bundle。
+**从源码**
+
+```bash
+git clone https://github.com/switch-ran/dsh-memory-garden
+dsh plugin --profile <你的profile> add ./dsh-memory-garden
+```
+
+装完重载插件，第一件事在会话里说一句 `/memory init`。
 
 ## 配置
 
