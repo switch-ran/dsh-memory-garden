@@ -1,0 +1,4 @@
+# dsh-memory-garden bundle：把记忆花园挂进 DSH
+- insert:
+    - id: memory-garden
+      name: dsh-memory-garden
