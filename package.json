@@ -1,0 +1,19 @@
+{
+  "name": "dsh-memory-garden",
+  "version": "0.2.0",
+  "description": "记忆花园：给 DeepSeek Harness 用的自生长记忆——骨架默认空，靠聊天长出「关于你 / 关于我 / 我们之间」，配日记、原文、索引、纠错，全是能读能拷的 md。",
+  "author": "泡泡",
+  "type": "module",
+  "main": "index.mjs",
+  "exports": {
+    ".": "./index.mjs",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": ["index.mjs", "cordis.patch.yml", "README.md"],
+  "scripts": { "test": "node --test test/" },
+  "engines": { "node": ">=22" },
+  "keywords": ["deepseek-harness", "dsh-plugin", "memory", "self-growing", "markdown"],
+  "license": "MIT",
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+}
